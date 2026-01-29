@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Shraddha General Hospital</title>
+
+    <!-- Favicon -->
+    <link rel="icon" href="favicon.png" type="image/png">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <!-- JS -->
+    <script defer src="Hospital.js"></script>
+</head>
+<body>
+
+<!-- ================= HEADER ================= -->
+<header class="header">
+    <div class="logo">
+        <h1>Shraddha Hospital</h1>
+        <p>Vadgaon Rasai</p>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <a href="#home">Home</a>
+        <a href="#doctors">Doctors</a>
+        <a href="#appointment">Appointment</a>
+        <a href="services.html">Services</a>
+        <a href="Facilities.html">Facilities</a>
+        <a href="About.html">About</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+</header>
+
+<!-- ================= HERO SECTION ================= -->
+<section id="home" class="hero">
+    <h2>Welcome to Shraddha General Hospital</h2>
+    <p>Your health, our priority</p>
+
+    <!-- Search Feature -->
+    <input type="text" id="searchBox" placeholder="Search doctors, services, facilities...">
+</section>
+
+<!-- ================= DOCTORS ================= -->
+<section id="doctors" class="section">
+    <h2>Our Doctors</h2>
+
+    <div class="doctors">
+        <div class="card">
+            <i class="fa-solid fa-user-doctor"></i>
+            <h3>Dr. Sachin Parbhane</h3>
+            <p>B.A.M.S</p>
+            <p>Reg. No. I-40994-A-1</p>
+            <p>10+ Years Experience</p>
+        </div>
+
+        <div class="card">
+            <i class="fa-solid fa-user-doctor"></i>
+            <h3>Dr. Rupali Parbhane</h3>
+            <p>B.H.M.S</p>
+            <p>Reg. No. 36111</p>
+            <p>8+ Years Experience</p>
+        </div>
+    </div>
+</section>
+
+ <section class="opdtimings section">
+    <h2>More Details....!</h2>
+
+    <div class="opd-container">
+        <div class="card opd-card">
+            <h3>OPD timings</h3>
+            <i class="fa-solid fa-clock"></i>
+            <h3>OPD Hours</h3>
+            <p><strong>Morning:</strong> 9:00 AM – 1:00 PM</p>
+            <p><strong>Evening:</strong> 5:00 PM – 9:00 PM</p>
+            <p>Monday – Sunday</p>
+        </div>
+    
+    
+        <div class ="card checkup">
+            <h3>Health checkup</h3>
+            <i class = "fa-solid fa-book"Center> </i>
+            
+            <a href="healthchekup.html"><align:center>Health checkup Center</align:center></a>
+        </div>
+    </div>
+</section>
+
+
+<!-- ================= APPOINTMENT ================= -->
+<section id="appointment" class="section appointment">
+    <h2>Book an Appointment</h2>
+
+    <form onsubmit="showPopup(); return false;">
+        <input type="text" placeholder="Full Name" required>
+        <input type="email" placeholder="Email Address" required>
+        <input type="tel" placeholder="Phone Number" required>
+
+        <select required>
+            <option value="">Select Doctor</option>
+            <option>Dr. Sachin Parbhane</option>
+            <option>Dr. Rupali Parbhane</option>
+        </select>
+
+        <input type="date" required>
+
+        <button type="submit">Confirm Appointment</button>
+    </form>
+</section>
+
+
+<!-- ================= FOOTER ================= -->
+<footer class="footer">
+    <p>Thank you for visiting Shraddha Hospital</p>
+    <p>&copy; 2025 Shraddha General Hospital | All Rights Reserved</p>
+</footer>
+
+</body>
+</html>
